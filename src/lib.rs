@@ -4,6 +4,15 @@
 //! without having to put every possible target in memory and shuffling.
 //!
 //! [Original code](https://github.com/robertdavidgraham/masscan/blob/master/src/crypto-blackrock2.c).
+//! # Examples
+//! ```rs
+//! use blackrock2::BlackRockIpGenerator;
+//! 
+//! for ip in BlackRockIpGenerator::new() {
+//!     println!("{ip}")
+//! }
+//! ```
+
 
 use std::iter::FusedIterator;
 use std::net::Ipv4Addr;
